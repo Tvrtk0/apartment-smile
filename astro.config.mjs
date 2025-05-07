@@ -8,4 +8,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: "https://tvrtk0.github.io",
+  base: "/apartment-smile",
 });
