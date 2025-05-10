@@ -7,6 +7,5 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  site: "https://tvrtk0.github.io",
-  base: "/apartment-smile",
+  site: "https://www.apartmentsmile.com",
 });
