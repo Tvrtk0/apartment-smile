@@ -1,11 +1,12 @@
 ---
 import hero from "../assets/hero.png";
+import livingroom from "../assets/living-room.avif";
 import bedroom1 from "../assets/bedroom-1.avif";
-import bedroom2 from "../assets/bedroom-2.avif";
 import beach from "../assets/beach.webp";
 import Navigation from "../components/Navigation.astro";
 import BookButton from "../components/BookButton.astro";
 import GoogleMap from "../components/GoogleMap.astro";
+import { Picture } from "astro:assets";
 ---
 
 <Navigation />
@@ -25,10 +26,10 @@ import GoogleMap from "../components/GoogleMap.astro";
       </div>
     </div>
     <div class="shadow-lg rounded-lg">
-      <img
-        src={hero.src}
-        alt="apartment-smile"
-        width="600px"
+      <Picture
+        src={hero}
+        width={600}
+        alt="apartment smile"
         fetchpriority="high"
         class="rounded-xl"
       />
@@ -48,26 +49,26 @@ import GoogleMap from "../components/GoogleMap.astro";
       class="pt-8 md:pt-48 pb-8 max-w-8xl mx-auto px-4 flex flex-wrap justify-center gap-4"
     >
       <div class="bg-slate-50 p-4 shadow-2xl rounded-lg">
-        <img
-          src={bedroom1.src}
+        <Picture
+          src={bedroom1}
           alt="bedroom"
-          width="400px"
+          width={400}
           class="h-full object-cover"
         />
       </div>
       <div class="bg-slate-50 p-4 shadow-2xl rounded-lg">
-        <img
-          src={bedroom2.src}
-          alt="bedroom-2"
-          width="400px"
+        <Picture
+          src={livingroom}
+          alt="living room"
+          width={400}
           class="h-full object-cover"
         />
       </div>
       <div class="bg-slate-50 p-4 shadow-2xl rounded-lg">
-        <img
-          src={beach.src}
+        <Picture
+          src={beach}
           alt="beach"
-          width="400px"
+          width={400}
           class="h-full object-cover"
         />
       </div>

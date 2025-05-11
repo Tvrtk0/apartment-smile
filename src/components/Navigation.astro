@@ -2,9 +2,16 @@
 import Logo from "./Logo.astro";
 ---
 
-<nav class="text-cyan-600 max-w-7xl h-14 flex items-center mx-auto px-4">
-  <div class="mr-1">
+<nav
+  class="text-cyan-600 max-w-7xl h-14 flex items-center justify-between mx-auto px-4"
+>
+  <a href="/" class="flex items-center gap-2">
     <Logo />
-  </div>
-  <b>APARTMENT SMILE</b>
+    <b>APARTMENT SMILE</b>
+  </a>
+
+  <ul class="flex gap-5 font-medium">
+    <li><a href="/explore">Explore</a></li>
+    <li><a href="/gallery">Gallery</a></li>
+  </ul>
 </nav>
