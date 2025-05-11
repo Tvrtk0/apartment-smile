@@ -1,9 +1,195 @@
 ---
+import konobaNikola from "../assets/konoba-nikola.jpg";
+import diocletian from "../assets/diocletian.jpg";
+import beach from "../assets/beach.webp";
+import { Image } from "astro:assets";
 import Navigation from "../components/Navigation.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
   <Navigation />
-  <main>Explore</main>
+  <main class="max-w-7xl mx-auto pt-3 md:pt-8 px-5 pb-16">
+    <h1 class="text-center text-2xl md:text-3xl font-bold hidden md:block">
+      Explore
+    </h1>
+
+    <section
+      class="mt-5 mb-12 flex flex-col justify-center flex-wrap gap-5 max-w-[1100px] mx-auto"
+    >
+      <h2 class="font-bold text-2xl">Nearest airports</h2>
+      <ul>
+        <li class="flex gap-5">
+          <span class="font-medium list-disc">Zračna luka Split</span>
+          22 km
+        </li>
+        <li class="flex gap-5">
+          <span class="font-medium">Zračna luka Brač </span>
+          54 km
+        </li>
+      </ul>
+    </section>
+
+    <section
+      class="mt-5 mb-12 flex flex-col justify-center flex-wrap gap-5 max-w-[1100px] mx-auto"
+    >
+      <h2 class="font-bold text-2xl">Public transport</h2>
+      <ul class="list-disc ps-4">
+        <li>
+          <span>Split bus station -</span>
+          <a
+            class="text-cyan-600 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.ak-split.hr/">www.ak-split.hr</a
+          >
+        </li>
+        <li>
+          <span>City ​​transport -</span>
+          <a
+            class="text-cyan-600 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.promet-split.hr/">www.promet-split.hr</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <section
+      class="mt-5 flex flex-col justify-center flex-wrap gap-5 max-w-[1100px] mx-auto"
+    >
+      <h2 class="font-bold text-2xl">Restaurants</h2>
+      <div class="flex flex-col md:flex-row gap-3 md:gap-5 mb-3">
+        <a
+          href="https://www.tripadvisor.com/Restaurant_Review-g1571763-d1998550-Reviews-Konoba_Nikola-Stobrec_Split_Split_Dalmatia_County_Dalmatia.html?m=69573"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src={konobaNikola}
+            width={400}
+            alt="Konoba Nikola"
+            quality="high"
+            class="rounded-xl"
+          />
+        </a>
+        <div class="flex flex-col gap-3">
+          <article class="mb-5">
+            <h3 class="font-bold">
+              Konoba Nikola <span class="font-normal text-gray-500">(0m)</span>
+            </h3>
+            <a
+              href="https://www.tripadvisor.com/Restaurant_Review-g1571763-d1998550-Reviews-Konoba_Nikola-Stobrec_Split_Split_Dalmatia_County_Dalmatia.html?m=69573"
+              class="underline text-cyan-600"
+              target="_blank"
+              rel="noopener noreferrer">Tripadvisor</a
+            >
+            <p class="mt-3 max-w-lg">
+              Fresh fish, high quality ingredients, intimate atmosphere and
+              understated, discreet, excellent service
+            </p>
+          </article>
+          <article>
+            <h3 class="font-bold">
+              Kaša Grill & Bar <span class="font-normal text-gray-500"
+                >(600m)</span
+              >
+            </h3>
+            <a
+              href="https://www.tripadvisor.com/Restaurant_Review-g1571763-d10583568-Reviews-Kasa_Grill_Bar-Stobrec_Split_Split_Dalmatia_County_Dalmatia.html?m=69573"
+              class="underline text-cyan-600"
+              target="_blank"
+              rel="noopener noreferrer">Tripadvisor</a
+            >
+          </article>
+          <article>
+            <h3 class="font-bold">
+              Ivo No. 1 <span class="font-normal text-gray-500">(550m)</span>
+            </h3>
+            <a
+              href="https://www.tripadvisor.com/Restaurant_Review-g1571763-d6896814-Reviews-Pizzeria_Ivo_Nr1-Stobrec_Split_Split_Dalmatia_County_Dalmatia.html?m=69573"
+              class="underline text-cyan-600"
+              target="_blank"
+              rel="noopener noreferrer">Tripadvisor</a
+            >
+          </article>
+          <article>
+            <h3 class="font-bold">
+              Restoran Epetium <span class="font-normal text-gray-500"
+                >(450m)</span
+              >
+            </h3>
+            <a
+              href="https://www.tripadvisor.com/Restaurant_Review-g1571763-d4598076-Reviews-Restoran_Epetium-Stobrec_Split_Split_Dalmatia_County_Dalmatia.html?m=69573"
+              class="underline text-cyan-600"
+              target="_blank"
+              rel="noopener noreferrer">Tripadvisor</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="mt-5 mb-12 flex flex-col justify-center flex-wrap gap-5 max-w-[1100px] mx-auto"
+    >
+      <h2 class="font-bold text-2xl">Beaches in the area</h2>
+      <div class="flex flex-col lg:flex-row gap-5">
+        <Image
+          src={beach}
+          width={400}
+          alt="Diocletian's Palace"
+          quality="high"
+          class="rounded-xl"
+        />
+        <ul class="list-disc ps-4 font-medium">
+          <li>
+            <span>Plaža Stobreč Jug</span>
+            <span class="font-normal text-gray-500">(10m)</span>
+          </li>
+          <li>
+            <span>Plaža kampa Stobreč </span>
+            <span class="font-normal text-gray-500">(750m)</span>
+          </li>
+          <li>
+            <span>Plaža Stobreč</span>
+            <span class="font-normal text-gray-500">(1.3km)</span>
+          </li>
+          <li>
+            <span>Pješčana plaža Strožanac</span>
+            <span class="font-normal text-gray-500">(1.5km)</span>
+          </li>
+          <li>
+            <span>Plaža Strožanac sjever</span>
+            <span class="font-normal text-gray-500">(2.4km)</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section
+      class="mt-5 mb-12 flex flex-col justify-center flex-wrap gap-5 max-w-[1100px] mx-auto"
+    >
+      <h2 class="font-bold text-2xl">Popular attractions</h2>
+      <div class="flex flex-col lg:flex-row gap-5">
+        <Image
+          src={diocletian}
+          width={400}
+          alt="Diocletian's Palace"
+          quality="high"
+          class="rounded-xl"
+        />
+        <ul class="list-disc ps-4 font-medium">
+          <li>Diocletian's Palace</li>
+          <li>Ethnographic Museum Split</li>
+          <li>Salona Archaeological Park</li>
+          <li>Narodni trg - Pjaca</li>
+          <li>Trg Republike - Prokurative</li>
+          <li>Archaeological Museum in Split</li>
+          <li>Museum of the city of Split</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 </Layout>
