@@ -1,0 +1,67 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 128 128"
+  width="32px"
+  height="32px"
+>
+  <defs>
+    <radialGradient id="sunGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF176"></stop>
+      <stop offset="100%" stop-color="#FBC02D"></stop>
+    </radialGradient>
+  </defs>
+
+  <!-- Sun rays -->
+  <g transform="translate(64,64)" fill="#FFA000">
+    <!-- 16 triangular rays rotated evenly -->
+    <g>
+      <polygon points="0,-56 6,-40 -6,-40"></polygon>
+      <polygon points="0,56 6,40 -6,40" transform="rotate(180)"></polygon>
+      <polygon points="0,-56 6,-40 -6,-40" transform="rotate(22.5)"></polygon>
+      <polygon points="0,-56 6,-40 -6,-40" transform="rotate(45)"></polygon>
+      <polygon points="0,-56 6,-40 -6,-40" transform="rotate(67.5)"></polygon>
+      <polygon points="0,-56 6,-40 -6,-40" transform="rotate(90)"></polygon>
+      <polygon points="0,-56 6,-40 -6,-40" transform="rotate(112.5)"></polygon>
+      <polygon points="0,-56 6,-40 -6,-40" transform="rotate(135)"></polygon>
+      <polygon points="0,-56 6,-40 -6,-40" transform="rotate(157.5)"></polygon>
+      <polygon points="0,-56 6,-40 -6,-40" transform="rotate(202.5)"></polygon>
+      <polygon points="0,-56 6,-40 -6,-40" transform="rotate(225)"></polygon>
+      <polygon points="0,-56 6,-40 -6,-40" transform="rotate(247.5)"></polygon>
+      <polygon points="0,-56 6,-40 -6,-40" transform="rotate(270)"></polygon>
+      <polygon points="0,-56 6,-40 -6,-40" transform="rotate(292.5)"></polygon>
+      <polygon points="0,-56 6,-40 -6,-40" transform="rotate(315)"></polygon>
+      <polygon points="0,-56 6,-40 -6,-40" transform="rotate(337.5)"></polygon>
+    </g>
+  </g>
+
+  <!-- Sun face -->
+  <circle
+    cx="64"
+    cy="64"
+    r="36"
+    fill="url(#sunGradient)"
+    stroke="#F57C00"
+    stroke-width="2"></circle>
+
+  <!-- Eyes -->
+  <path
+    d="M50 60 Q48 55, 44 58"
+    stroke="#000"
+    stroke-width="3"
+    fill="none"
+    stroke-linecap="round"></path>
+  <path
+    d="M78 60 Q80 55, 84 58"
+    stroke="#000"
+    stroke-width="3"
+    fill="none"
+    stroke-linecap="round"></path>
+
+  <!-- Smile -->
+  <path
+    d="M48 76 Q64 88, 80 76"
+    stroke="#000"
+    stroke-width="3"
+    fill="none"
+    stroke-linecap="round"></path>
+</svg>
